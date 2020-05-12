@@ -11,6 +11,7 @@ frida -U --no-pause -f xxxxxxxx.package.name -l hook_ssl.js
 
 ```text
 //hook_ssl.js不好用了后，再使用hook_ssl2.js
+//仅测试android10， 其他版本的系统有可能overloads不一样，需要自己改改。
 
 1. 先取消抓包
 2. adb push certs.dex /data/local/tmp/certs.dex
